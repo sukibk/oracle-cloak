@@ -3,6 +3,7 @@ import HomePage from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import { action as loginAction } from "./pages/Home.jsx";
 // import { loader as homeLoader } from "./pages/Home.jsx";
+import SamplePage from "./pages/SamplePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,12 @@ const router = createBrowserRouter([
           {
             index: true,
             element: <Dashboard />,
+            children: [
+              {
+                index: true,
+                element: <SamplePage />,
+              },
+            ],
           },
         ],
       },
