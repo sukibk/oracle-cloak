@@ -2,12 +2,20 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    height: 30vh;
-    justify-content: space-evenly;
+    height: 300px;
 }
 
 .nav-item{
     text-decoration: none;
     color: white;
     font-weight: 500;
+}
+
+.list-item:hover{
+    background-color: #ec4040;
+    cursor: pointer;
+}
+
+.list-item{
+    padding: 3% 15%;
 }

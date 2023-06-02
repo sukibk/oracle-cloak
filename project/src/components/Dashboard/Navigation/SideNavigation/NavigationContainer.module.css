@@ -1,8 +1,9 @@
 .oracle-cloak-nav {
-    width: 15%;
+    width: 280px;
     background-color: #3d3c3c;
     height: 100vh;
     position: fixed;
+    overflow: scroll;
 }
 
 .oracle-cloak-nav--inner{
@@ -27,10 +28,6 @@ p{
 
 .manage-inner{
     padding: 5% 15%;
-}
-
-.inner--nav{
-    padding: 0 15%;
 }
 
 .configure-inner{

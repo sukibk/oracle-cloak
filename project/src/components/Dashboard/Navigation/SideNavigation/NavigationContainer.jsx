@@ -1,7 +1,7 @@
 import styles from "./NavigationContainer.module.css";
-import ManageNavigation from "./ManageNavigation";
-import ConfigureNavigation from "./ConfigureNavigation";
-import Button from "../../utils/Button/Button";
+import ManageNavigation from "./ManageNavigation.jsx";
+import ConfigureNavigation from "./ConfigureNavigation.jsx";
+import Button from "../../../utils/Button/Button.jsx";
 
 export default function NavigationContainer() {
   return (

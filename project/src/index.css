@@ -35,6 +35,7 @@ input:focus{
   height: 50px;
   border-top-right-radius: 0.2rem;
   border-top-left-radius: 0.2rem;
+  box-shadow: inset -80px -80px 85px rgb(181, 164, 238),
 }
 
 h1{

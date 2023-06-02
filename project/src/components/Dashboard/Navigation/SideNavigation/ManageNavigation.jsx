@@ -4,37 +4,37 @@ import { Link } from "react-router-dom";
 export default function ManageNavigation(props) {
   return (
     <ul className={styles.navigation}>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Clients
         </Link>
       </li>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Client scopes
         </Link>
       </li>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Realm roles
         </Link>
       </li>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Users
         </Link>
       </li>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Groups
         </Link>
       </li>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Sessions
         </Link>
       </li>
-      <li>
+      <li className={styles["list-item"]}>
         <Link className={styles["nav-item"]} to={"/sample-page"}>
           Events
         </Link>
