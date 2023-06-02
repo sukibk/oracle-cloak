@@ -1,0 +1,15 @@
+.button-white{
+    background: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid black;
+    color: black;
+}
+
+.button-green{
+    background-color: #5F7D4F;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.4rem;
+    color: white;
+}

@@ -1,0 +1,33 @@
+.oracle--user-login{
+    height: 40%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-login__inner{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+}
+
+.login-parameters{
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 70%;
+}
+
+.input{
+    border-bottom: 1px solid grey;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.actions{
+    display: flex;
+    gap: 1rem;
+}
+
