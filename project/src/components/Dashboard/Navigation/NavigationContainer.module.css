@@ -1,0 +1,45 @@
+.oracle-cloak-nav {
+    width: 15%;
+    background-color: #3d3c3c;
+    height: 100vh;
+    position: fixed;
+}
+
+.oracle-cloak-nav--inner{
+}
+
+.select{
+    padding: 10% 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    color: white;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.select select{
+    width: 80%;
+}
+
+.manage-inner{
+    padding: 5% 15%;
+}
+
+.inner--nav{
+    padding: 0 15%;
+}
+
+.configure-inner{
+    padding: 5% 15%;
+}
+
+hr{
+    height: 1px;
+    border-width: 0;
+    color: grey;
+    background-color: grey;
+}

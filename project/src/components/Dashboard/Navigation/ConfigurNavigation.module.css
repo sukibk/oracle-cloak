@@ -1,0 +1,13 @@
+.navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 17vh;
+    justify-content: space-evenly;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
