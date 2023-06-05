@@ -2,7 +2,7 @@
     width: 280px;
     background-color: #3d3c3c;
     height: 90vh;
-    position: fixed;
+    display: block;
     overflow-y: auto;
 }
 

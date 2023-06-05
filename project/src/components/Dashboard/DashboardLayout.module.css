@@ -1,0 +1,9 @@
+.dashboard-main{
+    display: flex;
+}
+
+.right{
+    padding: 2vw;
+    width: 98vw;
+    height: 88vh; /*100-padding-topNav*/
+}

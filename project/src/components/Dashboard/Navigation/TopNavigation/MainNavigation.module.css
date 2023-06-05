@@ -18,6 +18,10 @@
     flex-direction: column;
 }
 
+.oracle-main--nav__hamburger:hover{
+    cursor: pointer;
+}
+
 .oracle-main--nav__hamburger span {
     display: block;
     width: 33px;
