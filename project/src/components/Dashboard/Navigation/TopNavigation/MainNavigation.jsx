@@ -3,30 +3,64 @@ import logo from "../../../../assets/Oracle_mainnav.png";
 import Button from "../../../utils/Button/Button";
 import { useDispatch } from "react-redux";
 import { navigationActions } from "../../../store/navigation-slice.js";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function MainNavigation() {
   const dispatchNavToggle = useDispatch();
+  const navigateTo = useNavigate();
 
-  const toggleNavHandler = () => {
-    dispatchNavToggle(navigationActions.toggleNavigationVisibility());
+  const [navClass, setNavClass] = useState("oracle-nav--dropdown");
+
+  // const toggleNavHandler = () => {
+  //   dispatchNavToggle(navigationActions.toggleNavigationVisibility());
+  // };
+
+  const showNavHandler = () => {
+    setNavClass("oracle-nav--dropdown__show");
+  };
+
+  const hideNavHandler = () => {
+    setNavClass("oracle-nav--dropdown");
+  };
+
+  const navigateHomeHandler = () => {
+    navigateTo("/");
   };
 
   return (
-    <div className={styles["oracle-main--nav"]}>
+    <div onMouseLeave={hideNavHandler} className={styles["oracle-main--nav"]}>
       <div className={styles["oracle-main--nav__brand"]}>
-        <div
-          className={styles["oracle-main--nav__hamburger"]}
-          onClick={toggleNavHandler}
-        >
-          <span />
-          <span />
-          <span />
-        </div>
-        <img src={logo} width={150} />
+        {/*<div*/}
+        {/*  className={styles["oracle-main--nav__hamburger"]}*/}
+        {/*  onClick={toggleNavHandler}*/}
+        {/*>*/}
+        {/*  <span />*/}
+        {/*  <span />*/}
+        {/*  <span />*/}
+        {/*</div>*/}
+        <img
+          className={styles["oracle-logo"]}
+          src={logo}
+          width={150}
+          onClick={navigateHomeHandler}
+        />
       </div>
       <div className={styles["oracle-main--nav__tools"]}>
-        <div className={styles.info}></div>
-        <img src=""></img>
+        <img
+          onMouseEnter={showNavHandler}
+          src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png"
+          width={65}
+        />
+        <div onMouseLeave={hideNavHandler} className={styles[`${navClass}`]}>
+          <Link
+            className={styles["oracle-nav--dropdown--link"]}
+            to={"/user-profile"}
+          >
+            Profile
+          </Link>
+        </div>
       </div>
     </div>
   );

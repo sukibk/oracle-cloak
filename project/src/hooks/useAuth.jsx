@@ -21,10 +21,15 @@ export default function useAuth() {
   useEffect(() => {
     if (isRun.current) return;
     isRun.current = true;
-    client
-      .init({ onLoad: "login-required" })
-      .then((res) => loginDispatch(authorizationActions.logUserIn()));
-    //console.log(JSON.stringify(kc.tokenParsed));
+    if (isLogin === true) return;
+    client.init({ onLoad: "login-required" }).then((res) => {
+      loginDispatch(authorizationActions.logUserIn());
+      loginDispatch(
+        authorizationActions.setUser({
+          user: client.tokenParsed,
+        })
+      );
+    });
 
     // loginDispatch(loadUserData());
     document.title = "Oracleclock";

@@ -1,5 +1,5 @@
 import styles from "./LoginForm.module.css";
-import Button from "../utils/Button/Button";
+import Button from "../../utils/Button/Button.jsx";
 import { Form } from "react-router-dom";
 
 export default function LoginForm() {

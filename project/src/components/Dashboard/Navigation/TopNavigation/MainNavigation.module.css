@@ -3,14 +3,31 @@
     background-color: #2f2f2f;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .oracle-main--nav__brand {
     display: flex;
     align-items: center;
     width: 20%;
-    min-width: 300px;
+    min-width: 200px;
     justify-content: space-evenly;
+}
+
+.oracle-logo:hover{
+    cursor: pointer;
+}
+
+.oracle-main--nav__tools img{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 2rem;
+    transition: transform 0.4s ease-out;
+}
+
+.oracle-main--nav__tools img:hover{
+    cursor: pointer;
+    transform: scale(0.9);
 }
 
 .oracle-main--nav__hamburger {
@@ -40,3 +57,31 @@
     opacity 0.55s ease;
 }
 
+.oracle-main--nav__tools{
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.oracle-nav--dropdown{
+    display: none;
+}
+
+.oracle-nav--dropdown__show{
+    border-radius: 0.4rem;
+    display: block;
+    position: absolute;
+    top:80px;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.oracle-nav--dropdown--link{
+    text-decoration: none;
+    color: #3d3c3c;
+    padding: 12px 16px;
+    display: block;
+}

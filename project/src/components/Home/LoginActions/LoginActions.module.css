@@ -1,0 +1,9 @@
+.oracle-login-actions{
+    padding-top: 2rem;
+    width: 450px;
+}
+
+.actions-container{
+    display: flex;
+    justify-content: space-between;
+}
