@@ -1,0 +1,36 @@
+.oracle-user-profile--form{
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  gap: 1rem;
+}
+
+.oracle-user-profile--form div{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.oracle-user-profile--actions{
+  padding-top: 2rem;
+  padding-left: 20%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+}
+
+.actions--button{
+ width: 200px;
+}
+
+.oracle-user-profile--input-field{
+  background: none;
+  transition: all 0.4s;
+  font-size: 16px;
+}
+
+.oracle-user-profile--input-field:disabled{
+  background-color: #e5e5e5;
+}

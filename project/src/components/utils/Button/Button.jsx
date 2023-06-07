@@ -8,7 +8,7 @@ export default function Button(props) {
         <button
           onClick={props.onClick}
           type={props.type}
-          className={styles["button-white"]}
+          className={`${styles["button-white"]} ${props.className}`}
         >
           {props.children}
         </button>
@@ -18,7 +18,7 @@ export default function Button(props) {
         <button
           onClick={props.onClick}
           type={props.type}
-          className={styles["button-green"]}
+          className={`${styles["button-green"]} ${props.className}`}
         >
           {props.children}
         </button>
