@@ -13,7 +13,8 @@ export const client = new Keycloak({
 
 export default function useAuth() {
   // const [isLogin, setLogin] = useState(false);
-  const isRun = useRef(false);
+  const isRun = useRef(false); //Try to put this into LocalStorage and read from there and then leave it to
+  // idle for 5 minutes and try to refresh the page
 
   const isLogin = useSelector((store) => store.authorization.isLoggedIn);
   const loginDispatch = useDispatch();
@@ -22,6 +23,7 @@ export default function useAuth() {
     if (isRun.current) return;
     isRun.current = true;
     if (isLogin === true) return;
+    console.log("Auth triggered");
     client.init({ onLoad: "login-required" }).then((res) => {
       loginDispatch(authorizationActions.logUserIn());
       loginDispatch(

@@ -1,9 +1,9 @@
-import UserProfile from "../components/UserProfile/UserInfo";
+import UserPageLayout from "../components/UserProfile/UserPageLayout";
 
 export default function UserProfilePage() {
   return (
     <>
-      <UserProfile />
+      <UserPageLayout />
     </>
   );
 }

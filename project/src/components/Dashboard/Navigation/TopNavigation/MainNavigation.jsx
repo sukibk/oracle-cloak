@@ -1,5 +1,6 @@
 import styles from "./MainNavigation.module.css";
 import logo from "../../../../assets/Oracle_mainnav.png";
+import userProfilePic from "../../../../assets/oracle-user-profile.png";
 import Button from "../../../utils/Button/Button";
 import { useDispatch } from "react-redux";
 import { navigationActions } from "../../../store/navigation-slice.js";
@@ -48,13 +49,10 @@ export default function MainNavigation() {
         />
       </div>
       <div className={styles["oracle-main--nav__tools"]}>
-        <img
-          onMouseEnter={showNavHandler}
-          src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG.png"
-          width={65}
-        />
+        <img onMouseEnter={showNavHandler} src={userProfilePic} width={65} />
         <div onMouseLeave={hideNavHandler} className={styles[`${navClass}`]}>
           <Link
+            onClick={hideNavHandler}
             className={styles["oracle-nav--dropdown--link"]}
             to={"/user-profile"}
           >

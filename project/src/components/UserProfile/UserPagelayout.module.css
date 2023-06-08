@@ -1,0 +1,27 @@
+.oracle--user-info-page{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.oracle--home-button{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+@media (max-width: 1000px){
+    .oracle--home-button{
+        right: unset;
+        top: unset;
+        left: 5%;
+        bottom: 10%;
+        background-color: #5F7D4F;
+        color: white;
+    }
+
+}
